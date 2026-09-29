@@ -12,7 +12,7 @@ jobs:
         uses: terraform-linters/setup-tflint@v6
 
         with:
-          tflint_version_file: latest
+          tflint_version_file: .tool-versions
 
       - name: Run TFLint
         run: tflint --version
